@@ -13123,7 +13123,6 @@ void 0 === OrgChart && (OrgChart = {}),
               r[a] +
               "-balkangraph.azurewebsites.net/api/OrgChartJS",
             n = i[a];
-          alert(e);
           (n.onreadystatechange = function () {
             if (4 == this.readyState && 200 == this.status) {
               OrgChart.localStorage.setItem("funcUrl", e), t(e);
