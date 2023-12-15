@@ -6463,7 +6463,6 @@ OrgChart._defaultConfig = function(t) {
         i()
     }
 }, OrgChart.remote._findRegion = function(t) {
-    alert("hi");
     var e = OrgChart.localStorage.getItem("funcUrl");
     if (e) t(e);
     else {
