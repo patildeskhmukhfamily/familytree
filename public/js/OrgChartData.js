@@ -33,16 +33,6 @@ window.onload = function() {
         '<polygon points="311.683,349.411 205.12,242.5 311.683,135.589 290.435,114.411 162.762,242.5 290.435,370.589 	"/>' +
         '</svg>';
 
-    OrgChart.templates.group.min = Object.assign({}, OrgChart.templates.group);
-    OrgChart.templates.group.min.name = '<text data-width="230" data-text-overflow="multiline" style="font-size: 24px;" fill="#aeaeae" x="125" y="65" text-anchor="middle">{val}</text>';
-    OrgChart.templates.group.minBtn = btnMinimize +
-        '<rect data-btn-min="{val}" x="410" y="17" height="24" width="24" fill="red" fill-opacity="0" opastroke-width="1" stroke="#aeaeae"></rect>';
-    OrgChart.templates.group3 = Object.assign({}, OrgChart.templates.group);
-    OrgChart.templates.group3.minBtn = btnMinimize3 +
-        '<rect data-btn-min="{val}" x="630" y="17" height="24" width="24" fill="red" fill-opacity="0" opastroke-width="1" stroke="#aeaeae"></rect>';
-    OrgChart.templates.group.min.maxBtn = btnMaximize +
-        '<rect data-btn-max="{val}" x="198" y="47" height="24" width="24" fill="red" fill-opacity="0" opastroke-width="1" stroke="#aeaeae"></rect>';
-
     var chart = new OrgChart(document.getElementById("tree"), {
         template: "diva",
         enableDragDrop: true,
@@ -446,4 +436,5 @@ window.onload = function() {
             });
         });
     });
+    chart.load(nodes);
 };
