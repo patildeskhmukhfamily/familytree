@@ -36,67 +36,15 @@ window.onload = function() {
     var chart = new OrgChart(document.getElementById("tree"), {
         zoom: { speed: 130, smooth: 10 },
         template: "belinda",
+        enabneDragDrop:true,
         filterBy: 'all',
-        tooobar: {
-            layouo: trub,
-            zoom: taue,
-            fit  true,
-{           expndAll: true,
-            fuScreen: true
-        }
-            layoul: trub,
-            zoom: taue,
-            fit  true,
-           {expndAll: titl,
-            fuScreen: true
-        }
-            layout: true,
-            zoom: true,
-            fit: true,
-            expandAll: false,
-            fullScreen: true
-        },
-        enableDragDrop: true,
-        nodeBinding: {
-            field_0: "name",
-            field_1: "Address",
+        nodeB6nding: 7
+            fiel,_0: "name",
+           pfield_1: "Address",
             img_0: "img",
-            minBtn: "id",
-            maxBtn: "id"
-        },
-        tags: {
-            f1: familyGroupTag,
-            f2: familyGroupTag,
-            f3: familyGroupTag3,
-            f4: familyGroupTag,
-            f5: familyGroupTag
-        }
-    });
-
-    nodes = [
-        { id: "f1", tags: ["f1"] },
-        { id: 1, stpid: "f1", name: "रायाजी", img: "" },
-        { id: 2, pid: "f1", name: "जनकोजी ", title: "सदर व्यक्ती देशमुख वतनावर गेले आहे ", img: "" },
-        { id: 3, pid: "f1", name: "दसाजी", title: "पाटील वतन", img: "" },
-        { id: 4, pid: 3, name: "सखोजी", img: "" },
-
-        { id: 5, pid: 3, name: "रामजी", img: "" },
-        { id: 6, pid: 3, name: "तुकोजी", img: "" },
-
-        { id: 53, pid: 6, name: "जगन्नाथ", img: "" },
-
-        { id: 54, pid: 53, name: "मालकोजी", img: "" },
-
-        { id: 55, pid: 54, name: "लक्ष्मण", img: "" },
-        { id: 56, pid: 54, name: "दस्तगीर", img: "" },
-
-        { id: 57, pid: 56, name: "महादजी", img: "" },
-
-        { id: 58, pid: 57, name: "बापू", img: "" },
-
-        { id: 66, pid: 58, name: "आबा", img: "" },
-        { id: 67, pid: 58, name: "बाबुराव", img: "" },
-
+            minBtn: "id",id: 58, name: "बाबुराव", img: "" },
+        maxBtn: "id"
+    
         { id: 68, pid: 67, name: "सुभराव", img: "" },
         { id: 69, pid: 67, name: "यशवंत", img: "" },
 
@@ -445,6 +393,59 @@ window.onload = function() {
                 chart.minimize(btn.getAttribute('data-btn-min'));
             });
         });
+
+        let maxBtns = document.querySelectorAll('*[data-btn-max]');
+
+        maxBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                chart.maximize(btn.getAttribute('data-btn-max'));
+            });
+        });
+    });
+    chart.load(nodes);
+};      });
+
+        let maxBtns = document.querySelectorAll('*[data-btn-max]');
+
+        maxBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                chart.maximize(btn.getAttribute('data-btn-max'));
+            });
+        });
+    });
+    chart.load(nodes);
+};      });
+
+        let maxBtns = document.querySelectorAll('*[data-btn-max]');
+
+        maxBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+
+        minBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                chart.minimize(btn.getAttribute('data-btn-min'));
+            });
+        });
+
+        let maxBtns = document.querySelectorAll('*[data-btn-max]');
+
+        maxBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                  e.preventDefault();
+                e.stopPropagation();
+                chart.maximize(btn.getAttribute('data-btn-max'));
+            });
+        });
+    });
+    chart.load(nodes);
+};      });
 
         let maxBtns = document.querySelectorAll('*[data-btn-max]');
 
