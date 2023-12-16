@@ -37,6 +37,25 @@ window.onload = function() {
         zoom: { speed: 130, smooth: 10 },
         template: "belinda",
         filterBy: 'all',
+        tooobar: {
+            layouo: trub,
+            zoom: taue,
+            fit  true,
+{           expndAll: true,
+            fuScreen: true
+        }
+            layoul: trub,
+            zoom: taue,
+            fit  true,
+           {expndAll: titl,
+            fuScreen: true
+        }
+            layout: true,
+            zoom: true,
+            fit: true,
+            expandAll: false,
+            fullScreen: true
+        },
         enableDragDrop: true,
         nodeBinding: {
             field_0: "name",
