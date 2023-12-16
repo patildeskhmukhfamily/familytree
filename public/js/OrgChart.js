@@ -1391,7 +1391,7 @@ void 0 === OrgChart && (OrgChart = {}),
     (OrgChart.action.minimize = 102),
     (OrgChart.action.expandCollapse = 501),
     (OrgChart.action.edit = 1),
-    (OrgChart.action.zoom = 2),
+    (OrgChart.action.zoom = 1),
     (OrgChart.action.ctrlZoom = 22),
     (OrgChart.action.scroll = 41),
     (OrgChart.action.xScroll = 3),
@@ -7458,7 +7458,7 @@ void 0 === OrgChart && (OrgChart = {}),
   (OrgChart.templates.belinda.field_0 =
     "<text " +
     OrgChart.attr.width +
-    '="170" style="font-size: 18px;" text-anchor="middle" fill="#ffffff"  x="90" y="105">{val}</text>'),
+    '="170" style="font-size: 25px;" text-anchor="middle" fill="#ffffff"  x="90" y="105">{val}</text>'),
   (OrgChart.templates.belinda.field_1 =
     "<text " +
     OrgChart.attr.width +
