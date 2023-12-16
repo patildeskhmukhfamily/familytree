@@ -33,9 +33,10 @@ window.onload = function() {
         '<polygon points="311.683,349.411 205.12,242.5 311.683,135.589 290.435,114.411 162.762,242.5 290.435,370.589 	"/>' +
         '</svg>';
 
-
     var chart = new OrgChart(document.getElementById("tree"), {
+        zoom: { speed: 130, smooth: 10 },
         template: "belinda",
+        filterBy: 'all',
         enableDragDrop: true,
         nodeBinding: {
             field_0: "name",
@@ -50,8 +51,7 @@ window.onload = function() {
             f3: familyGroupTag3,
             f4: familyGroupTag,
             f5: familyGroupTag
-        },
-
+        }
     });
 
     nodes = [
